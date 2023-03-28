@@ -1,0 +1,64 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+}
+
+img {
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+main {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+p {
+	margin: 20px 0;
+}
+
+.button-row {
+	display: flex;
+	justify-content: center;
+	margin: 20px 0;
+}
+
+button {
+	background-color: #333;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	font-size: 16px;
+	margin: 0 10px;
+	padding: 10px 20px;
+	transition: background-color 0.3s ease;
+}
+
+button:hover {
+	background-color: #666;
+}
+
+@keyframes slide-in {
+	0% {
+		transform: translateX(-100%);
+		opacity: 0;
+	}
+	100% {
+		transform: translateX(0%);
+		opacity: 1;
+	}
+}
+
+img:hover {
+	animation: slide-in 0.5s ease forwards;
+}
